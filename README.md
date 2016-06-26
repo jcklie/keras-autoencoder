@@ -1,5 +1,7 @@
 # Keras Autoencoder
 
+A collection of different autoencoder types in Keras. It is inspired by [this blog post](http://blog.keras.io/building-autoencoders-in-keras.html).
+
 ## Installation
 
 Python is easiest to use with a virtual environment. All packages are sandboxed in a local folder so that they do not interfere nor pollute the global installation:
