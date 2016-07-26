@@ -10,9 +10,9 @@ class SparseAutoencoder(AutoencoderBase):
 		input_img = Input(shape=(dim_in,))
 
 		regulizer = regularizers.activity_l2(sparsity)
-		encoded = Dense(encoding_dim, activation='relu', activity_regularizer=regulizer)(encoded)		
+		encoded = Dense(encoding_dim, activation='relu', activity_regularizer=regulizer)(input_img)		
 
-		decoded = Dense(dim_in, activation='sigmoid')(decoded)
+		decoded = Dense(dim_in, activation='sigmoid')(encoded)
 
 		self.autoencoder = Model(input=input_img, output=decoded)
 
