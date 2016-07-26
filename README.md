@@ -12,7 +12,11 @@ Whenever you now want to use this package, type
     
     source venv/bin/activate
     
-in every terminal that wants to make use of it. To install the dependencies, use **pip**:
+in every terminal that wants to make use of it. Theano needs a newer pip version, so we upgrade it first:
+
+	pip install --upgrade pip
+
+To install the dependencies, use **pip**:
     
     pip install -r requirements.txt
     
